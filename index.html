@@ -251,7 +251,7 @@
     /* whole card is a <a> tag */
     .press-card {
       display: grid;
-      grid-template-columns: 1.1fr 1fr;
+      grid-template-columns: 1.4fr 1fr;
       border-radius: 24px;
       overflow: hidden;
       box-shadow: 0 20px 60px rgba(74,44,110,0.13), 0 0 0 1px rgba(201,166,200,0.25);
@@ -263,10 +263,10 @@
     .press-card:hover { transform: translateY(-5px); box-shadow: 0 30px 70px rgba(74,44,110,0.18), 0 0 0 1px rgba(201,166,200,0.3); }
 
     .press-img-wrap {
-      position: relative; overflow: hidden; min-height: 280px;
+      position: relative; overflow: hidden; min-height: 340px;
     }
-    ..press-img-wrap img {
-      width: 100%; height: 100%; object-fit: contain; object-position: center;
+    .press-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center top;
       background: #0d3246;
     }
     .press-card:hover .press-img-wrap img { transform: scale(1.03); }
